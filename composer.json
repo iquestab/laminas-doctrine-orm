@@ -20,7 +20,7 @@
 	"require": {
 		"psr/container": "~1.0",
 		"doctrine/orm": "~2.7",
-		"doctrine/migrations": "~1.5 || ~2.0 || ^3.3",
+		"doctrine/migrations": "~1.5 || ~2.0",
 		"laminas/laminas-cli": "~1.0 || ~0.1",
 		"laminas/laminas-servicemanager": "~3.3 || ~4.0",
 		"php": "^8.0 || ^7.1"
