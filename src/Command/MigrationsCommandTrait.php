@@ -53,8 +53,17 @@ trait MigrationsCommandTrait {
 			$this->configuration->setMigrationsNamespace($config['namespace']);
 		}
 
+		if(isset($config['table_name'])) {
+			$this->configuration->setMigrationsTableName($config['table_name']);
+		}
 
-		$this->configuration->setMigrationsTableName($config['table_name']);
+		if(isset($config['organize_migrations'])) {
+			if($config['organize_migrations'] === 'year') {
+				$this->configuration->setMigrationsAreOrganizedByYear(true);
+			} else if($config['organize_migrations'] === 'year_and_month') {
+				$this->configuration->setMigrationsAreOrganizedByYearAndMonth(true);
+			}
+		}
 
 		if (!$this->configuration->getName()) {
 			$this->configuration->setName($config['name']);
