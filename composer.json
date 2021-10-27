@@ -19,7 +19,7 @@
 	"minimum-stability": "dev",
 	"require": {
 		"psr/container": "~1.0",
-		"doctrine/orm": "~2.7",
+		"doctrine/orm": "2.8.5",
 		"doctrine/migrations": "~1.5 || ~2.0",
 		"laminas/laminas-cli": "~1.0 || ~0.1",
 		"laminas/laminas-servicemanager": "~3.3 || ~4.0",
