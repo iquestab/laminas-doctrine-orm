@@ -53,6 +53,9 @@ trait MigrationsCommandTrait {
 			$this->configuration->setMigrationsNamespace($config['namespace']);
 		}
 
+
+		$this->configuration->setMigrationsTableName($config['table_name']);
+
 		if (!$this->configuration->getName()) {
 			$this->configuration->setName($config['name']);
 		}
