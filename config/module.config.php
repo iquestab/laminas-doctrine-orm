@@ -6,7 +6,7 @@ use Skar\LaminasDoctrineORM\Service;
 use Skar\LaminasDoctrineORM\Command;
 
 return [
-	'dependencies' => [
+	'service_manager' => [
 		'factories' => [
 			ORM\EntityManager::class => Service\EntityManagerFactory::class,
 
